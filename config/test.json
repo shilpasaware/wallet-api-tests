@@ -1,0 +1,23 @@
+
+{
+  "api": {
+    "baseUrl": "https://challenge.test.local/challenge/api/v1",
+    "serviceId": "wallet-api-tests"
+  },
+  "user": {
+    "username": "testuser",
+    "password": "testpassword"
+  },
+  "wallet": {
+    "defaultWalletId": "00000000-0000-0000-0000-000000000000"
+  },
+  "testData": {
+    "defaultCurrency": "EUR",
+    "initialFunds": {
+      "EUR": 1000.00,
+      "USD": 1500.00,
+      "GBP": 800.00
+    },
+    "timeoutPeriod": 30
+  }
+}

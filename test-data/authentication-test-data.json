@@ -1,0 +1,23 @@
+{
+    "valid_user": {
+      "username": "testuser",
+      "password": "testpassword",
+      "description": "User with valid credentials"
+    },
+    "invalid_user": {
+      "username": "invalid_user",
+      "password": "wrong_password",
+      "description": "User with invalid credentials"
+    },
+    "expired_token_user": {
+      "username": "testuser",
+      "password": "testpassword",
+      "expiry_minutes": -10,
+      "description": "User with a token that is set to expire"
+    },
+    "admin_user": {
+      "username": "admin",
+      "password": "admin_password",
+      "description": "User with administrative privileges"
+    }
+  }

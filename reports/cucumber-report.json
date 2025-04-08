@@ -1,0 +1,1587 @@
+[
+  {
+    "description": "  As a wallet user\n  I want to authenticate with the system\n  So that I can access my wallet and perform transactions",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-authentication;successful-authentication-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Successful authentication with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 164125
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 81208
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22666709
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I load test data for \"valid_user\"",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6792332
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "${data.username}",
+                      "${data.password}"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I login with the following credentials:",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 943292
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should receive a valid authentication token",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2126666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the authentication token should not be expired",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 856375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I should have access to my user ID",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 826040
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1329708
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 277332
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 84165
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@authentication",
+            "line": 2
+          },
+          {
+            "name": "@positive",
+            "line": 8
+          },
+          {
+            "name": "@high",
+            "line": 8
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-authentication;failed-authentication-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Failed authentication with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 459249
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 100124
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 909125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I load test data for \"invalid_user\"",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 300707
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "${data.username}",
+                      "${data.password}"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I login with the following credentials:",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I should receive an authentication error",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 591292
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 741874
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 72875
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@authentication",
+            "line": 2
+          },
+          {
+            "name": "@negative",
+            "line": 18
+          },
+          {
+            "name": "@high",
+            "line": 18
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-authentication;retrieve-user-information-after-authentication",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Retrieve user information after authentication",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 74250
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 61416
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 750165
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "I am logged in with valid credentials",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:12"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 358922500,
+              "error_message": "apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:443\nCall log:\n\u001b[2m  - → POST https://challenge.test.local/challenge/api/v1/user/login\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.51.1 (arm64; macOS 13.6) node/23.10\u001b[22m\n\u001b[2m    - accept: application/json\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - Content-Type: application/json\u001b[22m\n\u001b[2m    - X-Service-Id: wallet-api-tests\u001b[22m\n\u001b[2m    - content-length: 49\u001b[22m\n\n    at CustomWorld.<anonymous> (/Users/shilpa/Documents/API_Automation/wallet-api-tests/step_definitions/authentication.steps.js:19:46)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "I request my user information",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:82"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "I should see my user profile details",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:92"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I should see my wallet ID",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:97"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2155958
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 128333
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 74749
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@authentication",
+            "line": 2
+          },
+          {
+            "name": "@positive",
+            "line": 26
+          },
+          {
+            "name": "@medium",
+            "line": 26
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-authentication;authentication-token-expires-after-the-defined-period",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "Authentication token expires after the defined period",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 141166
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 59958
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1543958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 35,
+            "name": "I load test data for \"valid_user\"",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 260709
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "${data.username}",
+                      "${data.password}"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 36,
+            "name": "I login with the following credentials:",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 136374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "I should receive a valid authentication token",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 564584
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "the token expiry date should be set to 1 hour from now",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:102"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1578416
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1512249
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 77665
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 31375
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@authentication",
+            "line": 2
+          },
+          {
+            "name": "@positive",
+            "line": 33
+          },
+          {
+            "name": "@medium",
+            "line": 33
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-authentication",
+    "line": 3,
+    "keyword": "Feature",
+    "name": "User Authentication",
+    "tags": [
+      {
+        "name": "@authentication",
+        "line": 2
+      }
+    ],
+    "uri": "features/authentication.feature"
+  },
+  {
+    "description": "  As a wallet user\n  I want to make transactions in my wallet\n  So that I can manage my digital funds",
+    "elements": [
+      {
+        "description": "",
+        "id": "wallet-transactions;create-a-successful-credit-transaction",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Create a successful credit transaction",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 77333
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 42416
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 78457
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 831625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am logged in with valid credentials",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:12"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 308719124,
+              "error_message": "apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:443\nCall log:\n\u001b[2m  - → POST https://challenge.test.local/challenge/api/v1/user/login\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.51.1 (arm64; macOS 13.6) node/23.10\u001b[22m\n\u001b[2m    - accept: application/json\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - Content-Type: application/json\u001b[22m\n\u001b[2m    - X-Service-Id: wallet-api-tests\u001b[22m\n\u001b[2m    - content-length: 49\u001b[22m\n\n    at CustomWorld.<anonymous> (/Users/shilpa/Documents/API_Automation/wallet-api-tests/step_definitions/authentication.steps.js:19:46)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I have a valid wallet ID",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:44"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I load test data for \"credit_transaction\"",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "currency",
+                      "amount",
+                      "type"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "${data.currency}",
+                      "${data.amount}",
+                      "${data.type}"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I create a credit transaction with the following details:",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:47"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "the transaction should be created",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:80"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the transaction should have a status of \"${data.expectedStatus}\" or \"${data.alternateStatus}\"",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:85"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "if the transaction is \"finished\" then the outcome should be \"approved\"",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:90"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "my wallet balance for \"${data.currency}\" should increase by ${data.amount}",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1441874
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 105999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 57041
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wallet",
+            "line": 2
+          },
+          {
+            "name": "@transactions",
+            "line": 2
+          },
+          {
+            "name": "@positive",
+            "line": 12
+          },
+          {
+            "name": "@high",
+            "line": 12
+          },
+          {
+            "name": "@credit",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "wallet-transactions;create-a-successful-debit-transaction",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Create a successful debit transaction",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 121957
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 80500
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 227832
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 859417
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am logged in with valid credentials",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:12"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 308056959,
+              "error_message": "apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:443\nCall log:\n\u001b[2m  - → POST https://challenge.test.local/challenge/api/v1/user/login\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.51.1 (arm64; macOS 13.6) node/23.10\u001b[22m\n\u001b[2m    - accept: application/json\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - Content-Type: application/json\u001b[22m\n\u001b[2m    - X-Service-Id: wallet-api-tests\u001b[22m\n\u001b[2m    - content-length: 49\u001b[22m\n\n    at CustomWorld.<anonymous> (/Users/shilpa/Documents/API_Automation/wallet-api-tests/step_definitions/authentication.steps.js:19:46)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I have a valid wallet ID",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:44"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I load test data for \"debit_transaction\"",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I have sufficient funds in \"${data.currency}\" currency",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "currency",
+                      "amount",
+                      "type"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "${data.currency}",
+                      "${data.amount}",
+                      "${data.type}"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I create a debit transaction with the following details:",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:47"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "the transaction should be created",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:80"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "the transaction should have a status of \"${data.expectedStatus}\" or \"${data.alternateStatus}\"",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:85"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "if the transaction is \"finished\" then the outcome should be \"approved\"",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:90"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "my wallet balance for \"${data.currency}\" should decrease by ${data.amount}",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4428374
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 328582
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 92875
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wallet",
+            "line": 2
+          },
+          {
+            "name": "@transactions",
+            "line": 2
+          },
+          {
+            "name": "@positive",
+            "line": 23
+          },
+          {
+            "name": "@high",
+            "line": 23
+          },
+          {
+            "name": "@debit",
+            "line": 23
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "wallet-transactions;get-transaction-details",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Get transaction details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 130290
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 65916
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1200333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am logged in with valid credentials",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:12"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 315171041,
+              "error_message": "apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:443\nCall log:\n\u001b[2m  - → POST https://challenge.test.local/challenge/api/v1/user/login\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.51.1 (arm64; macOS 13.6) node/23.10\u001b[22m\n\u001b[2m    - accept: application/json\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - Content-Type: application/json\u001b[22m\n\u001b[2m    - X-Service-Id: wallet-api-tests\u001b[22m\n\u001b[2m    - content-length: 49\u001b[22m\n\n    at CustomWorld.<anonymous> (/Users/shilpa/Documents/API_Automation/wallet-api-tests/step_definitions/authentication.steps.js:19:46)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I have a valid wallet ID",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:44"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "I load test data for \"transaction_details\"",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "I have created a transaction",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:31"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I retrieve the transaction details",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:60"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "I should see the complete transaction information",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:107"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the transaction should have a valid ID, type, status and timestamps",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:112"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2043499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 126999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 61500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wallet",
+            "line": 2
+          },
+          {
+            "name": "@transactions",
+            "line": 2
+          },
+          {
+            "name": "@positive",
+            "line": 35
+          },
+          {
+            "name": "@medium",
+            "line": 35
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "wallet-transactions;failed-debit-transaction-due-to-insufficient-funds",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "Failed debit transaction due to insufficient funds",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 138875
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 56959
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 50958
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1686500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am logged in with valid credentials",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:12"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 311366207,
+              "error_message": "apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:443\nCall log:\n\u001b[2m  - → POST https://challenge.test.local/challenge/api/v1/user/login\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.51.1 (arm64; macOS 13.6) node/23.10\u001b[22m\n\u001b[2m    - accept: application/json\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - Content-Type: application/json\u001b[22m\n\u001b[2m    - X-Service-Id: wallet-api-tests\u001b[22m\n\u001b[2m    - content-length: 49\u001b[22m\n\n    at CustomWorld.<anonymous> (/Users/shilpa/Documents/API_Automation/wallet-api-tests/step_definitions/authentication.steps.js:19:46)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I have a valid wallet ID",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:44"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 45,
+            "name": "I load test data for \"insufficient_funds_transaction\"",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "I have insufficient funds in \"${data.currency}\" currency",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:22"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "currency",
+                      "amount",
+                      "type"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "${data.currency}",
+                      "${data.amount}",
+                      "${data.type}"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 47,
+            "name": "I create a debit transaction with the following details:",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:47"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 50,
+            "name": "the transaction should be created",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:80"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "the transaction should have a status of \"${data.expectedStatus}\" or \"${data.alternateStatus}\"",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:85"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "if the transaction is \"finished\" then the outcome should be \"denied\"",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:90"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "my wallet balance for \"${data.currency}\" should remain unchanged",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:120"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1392624
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 128416
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 62291
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wallet",
+            "line": 2
+          },
+          {
+            "name": "@transactions",
+            "line": 2
+          },
+          {
+            "name": "@negative",
+            "line": 43
+          },
+          {
+            "name": "@high",
+            "line": 43
+          },
+          {
+            "name": "@debit",
+            "line": 43
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "wallet-transactions;verify-transaction-auto-reject-after-timeout",
+        "keyword": "Scenario",
+        "line": 56,
+        "name": "Verify transaction auto-reject after timeout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 125583
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 78042
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 199000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1469792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am logged in with valid credentials",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:12"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 307986542,
+              "error_message": "apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:443\nCall log:\n\u001b[2m  - → POST https://challenge.test.local/challenge/api/v1/user/login\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.51.1 (arm64; macOS 13.6) node/23.10\u001b[22m\n\u001b[2m    - accept: application/json\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - Content-Type: application/json\u001b[22m\n\u001b[2m    - X-Service-Id: wallet-api-tests\u001b[22m\n\u001b[2m    - content-length: 49\u001b[22m\n\n    at CustomWorld.<anonymous> (/Users/shilpa/Documents/API_Automation/wallet-api-tests/step_definitions/authentication.steps.js:19:46)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I have a valid wallet ID",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:44"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 57,
+            "name": "I load test data for \"timeout_transaction\"",
+            "match": {
+              "location": "step_definitions/authentication.steps.js:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "I create a pending credit transaction",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:38"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 59,
+            "name": "${data.timeoutPeriod} minutes have passed since the transaction creation",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 60,
+            "name": "the transaction status should be \"${data.expectedStatus}\"",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:125"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "the transaction outcome should be \"${data.expectedOutcome}\"",
+            "match": {
+              "location": "step_definitions/wallet_transactions.steps.js:134"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2018082
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 141082
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 81874
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wallet",
+            "line": 2
+          },
+          {
+            "name": "@transactions",
+            "line": 2
+          },
+          {
+            "name": "@negative",
+            "line": 55
+          },
+          {
+            "name": "@medium",
+            "line": 55
+          },
+          {
+            "name": "@timeout",
+            "line": 55
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "wallet-transactions",
+    "line": 3,
+    "keyword": "Feature",
+    "name": "Wallet Transactions",
+    "tags": [
+      {
+        "name": "@wallet",
+        "line": 2
+      },
+      {
+        "name": "@transactions",
+        "line": 2
+      }
+    ],
+    "uri": "features/wallet_transactions.feature"
+  }
+]

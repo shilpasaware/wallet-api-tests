@@ -1,0 +1,62 @@
+{
+    "credit_transaction": {
+      "currency": "EUR",
+      "amount": 100.50,
+      "type": "credit",
+      "expectedStatus": "finished",
+      "alternateStatus": "pending",
+      "description": "Standard credit transaction to add funds"
+    },
+    "debit_transaction": {
+      "currency": "USD",
+      "amount": 50.25,
+      "type": "debit",
+      "expectedStatus": "finished",
+      "alternateStatus": "pending",
+      "description": "Standard debit transaction to withdraw funds"
+    },
+    "transaction_details": {
+      "currency": "EUR",
+      "amount": 75.00,
+      "type": "credit",
+      "expectedFields": ["transactionId", "currency", "amount", "type", "status", "createdAt"],
+      "description": "Transaction for checking detailed information"
+    },
+    "insufficient_funds_transaction": {
+      "currency": "EUR",
+      "amount": 500.00,
+      "type": "debit",
+      "expectedStatus": "finished",
+      "alternateStatus": "pending",
+      "description": "Debit transaction that should fail due to insufficient funds"
+    },
+    "timeout_transaction": {
+      "currency": "USD",
+      "amount": 200.00,
+      "type": "credit",
+      "timeoutPeriod": 30,
+      "expectedStatus": "finished",
+      "expectedOutcome": "denied",
+      "description": "Transaction that should time out and be auto-rejected"
+    },
+    "multi_currency_transactions": {
+      "transactions": [
+        {
+          "currency": "EUR",
+          "amount": 50.00,
+          "type": "credit"
+        },
+        {
+          "currency": "USD", 
+          "amount": 75.50,
+          "type": "credit"
+        },
+        {
+          "currency": "GBP",
+          "amount": 45.75,
+          "type": "credit"
+        }
+      ],
+      "description": "Multiple currency transactions for wallet management tests"
+    }
+  }
